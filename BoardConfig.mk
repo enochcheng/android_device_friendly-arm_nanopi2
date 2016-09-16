@@ -106,27 +106,7 @@ BOARD_HAS_RIL := false
 SLSIAP_HWC_VERSION := 2
 
 # sepolicy
-BOARD_SEPOLICY_DIRS := \
-	device/friendly-arm/nanopi2/sepolicy
-
-BOARD_SEPOLICY_UNION := \
-	file_contexts \
-	genfs_contexts \
-	adbd.te \
-	app.te \
-	boardinit.te \
-	device.te \
-	domain.te \
-	file.te \
-	mediaserver.te \
-	surfaceflinger.te \
-	system_server.te \
-	init.te \
-	kernel.te \
-	servicemanager.te \
-	netd.te \
-	healthd.te \
-	sdcardd.te
+BOARD_SEPOLICY_DIRS += device/friendly-arm/nanopi2/sepolicy
 
 # ART
 ART_USE_HSPACE_COMPACT := true

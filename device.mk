@@ -133,7 +133,7 @@ PRODUCT_PACKAGES += \
 	e2fsck
 
 # Connectivity
-PRODUCT_PACKAGES += \
+PRODUCT_PACKAGES := \
 	libwpa_client \
 	hostapd \
 	dhcpcd.conf \
@@ -187,13 +187,8 @@ $(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/config/config-bc
 # commonly available
 $(call inherit-product-if-exists, vendor/nexell/s5p4418/slsiap.mk)
 $(call inherit-product-if-exists, vendor/friendly-arm/nanopi2/device-nanopi2.mk)
-$(call inherit-product-if-exists, vendor/friendly-arm/apps/device-partial.mk)
 $(call inherit-product-if-exists, vendor/broadcom/nanopi2/device-partial.mk)
 
 # google gms
 $(call inherit-product-if-exists, vendor/google/gapps/device-partial.mk)
-
-# Nexell Application
-$(call inherit-product-if-exists, vendor/nexell/apps/nxapps.mk)
-$(call inherit-product-if-exists, vendor/nexell/apps/smartsync.mk)
 
